@@ -4,7 +4,7 @@ import pandas as pd
 
 
 # Load the model
-model = pickle.load(open(r'diabetes_model_without_scaling.sav', 'rb'))
+model = pickle.load(open(r'diabetes_model.pkl', 'rb'))
 
 # Function to handle one-hot encoding of smoking history
 def encode_smoking_history(smoking_status):
