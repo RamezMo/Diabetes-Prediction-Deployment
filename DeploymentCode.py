@@ -29,7 +29,7 @@ st.info("An easy and user-friendly application to predict diabetes based on your
 
 # Sidebar for user input
 st.sidebar.header('Diabetic Prediction Project')
-st.sidebar.image('diabetes.PNG')
+st.sidebar.image(os.path.join('diabetes.PNG'))
 st.sidebar.write('This project is using Diabetic Dataset from kaggle with 90% Accuracy till now')
 st.sidebar.write("")
 st.sidebar.markdown('Made with 🍬 By Eng. [Ramez Mohamed](https://www.linkedin.com/in/ramezmo1/)')
