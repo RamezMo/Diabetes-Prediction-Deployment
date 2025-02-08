@@ -1,10 +1,11 @@
 import pickle
 import streamlit as st
 import pandas as pd
-
+import os
 
 # Load the model
-model = pickle.load(open(r'diabetes_model.pkl', 'rb'))
+model_path = os.path.join('diabetes_model.pkl')
+model = pickle.load(open(model_path, 'rb'))
 
 # Function to handle one-hot encoding of smoking history
 def encode_smoking_history(smoking_status):
