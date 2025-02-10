@@ -46,9 +46,9 @@ gender_options = ["Female", "Male"]
 gender = st.selectbox("Gender", gender_options, index=0)
 
 # Input fields for numerical features (with default values and floating-point numbers)
-age = st.slider('Age', 18, 100, 45)  # Age range from 18 to 100 with a default value of 45
+age = st.slider('Age', 2, 100, 45)  # Age range from 18 to 100 with a default value of 45
 bmi = st.slider('BMI', 10.0, 60.0, 25.0, step=0.1)  # BMI range with floating-point precision (default 25.0)
-HbA1c_level = st.slider('HbA1c Level', 4.0, 15.0, 6.0, step=0.1)  # HbA1c level range with floating-point precision (default 6.0)
+HbA1c_level = st.slider('HbA1c Level', 2.0, 15.0, 6.0, step=0.1)  # HbA1c level range with floating-point precision (default 6.0)
 blood_glucose_level = st.slider('Blood Glucose Level (mg/dL)', 50, 300, 100)  # Glucose range from 50 to 300 mg/dL with a default value of 100
 
 # Input fields for categorical features (with default values)
